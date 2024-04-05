@@ -1,53 +1,31 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-  }
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #white;
+}
   
   .cool-box {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.0625rem; /* 17px / 16px (default font size) = 1.0625 */
-    background-color: #ff6f61; /* Base color */
-    color: #fff; /* Text color */
-    text-shadow: 1px 1px 2px black; /* Text shadow */
-    border-radius: 10px; /* Border radius */
-    border: 1px solid #d94c3e; /* Border */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Standard box shadow */
-    position: relative;
-    overflow: hidden;
+    font-size: 1.5rem;
+    background-color: rgb(235, 17, 17);
+    color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), insert 3px 3px 5px rgba(255, 255, 255, 0.3), insert -3px -3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    border: 1px solid rgb(12, 11,13);
+    background-image: linear-gradient(right bottom, rgb(126, 28, 238) rgb(127, 38, 244) 2 50%, rgb(50, 0, 85));
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
   
-  .cool-box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
-  }
-  
-  .cool-box::after {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .cool-box::before,
-  .cool-box::after {
-    z-index: -1;
-  }
+ 
   
